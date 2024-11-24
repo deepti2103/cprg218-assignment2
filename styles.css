@@ -1,0 +1,28 @@
+#container{
+    display: flex;
+    flex-direction: row;
+}
+header{
+    flex: 1;
+    font-size: 50px;
+}
+aside{
+    flex: 1;
+    /* border: 2px solid black; */
+}
+.buttons{
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+main{
+    display: flex;
+    background-color: purple;
+    margin-top: 2%;
+}
+img{
+    margin: 5%;
+}
+section{
+    margin: 5%;
+}
