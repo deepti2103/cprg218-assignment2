@@ -1,28 +1,114 @@
-#container{
-    display: flex;
-    flex-direction: row;
+body{
+    background-color:#e59a59;
 }
 header{
+    display: flex;
+    flex-direction: row;
+    background-color: #ffd5af;
+    box-shadow: 3px 3px 3px grey;
+    
+}
+h1{
     flex: 1;
     font-size: 50px;
+    margin-top: 20px;
+    margin-left: 30px;
 }
-aside{
+nav{
     flex: 1;
-    /* border: 2px solid black; */
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
 }
 .buttons{
-    margin: 20px;
-    border: 2px solid black;
-    border-radius: 10%;
+    margin: 10px;
+    padding: 10px;
+    width: 30%;
+    background-color: #712e1e;
+    color: white    ;
+    box-shadow: 3px 3px 3px grey;
+    border: none;
 }
 main{
     display: flex;
-    background-color: purple;
-    margin-top: 2%;
+    background-color: #888870;
+    margin: 3%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(41, 39, 39);
 }
 img{
-    margin: 5%;
+    margin: 3%;
+    border: 3px solid rgb(172, 169, 169);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(41, 39, 39);
 }
 section{
-    margin: 5%;
+    margin: 1%;
+}
+#first{
+    background-image: linear-gradient(to left,#8f3a25, #e48c3e );
+    color:white;
+    border: 5px groove #712e1e;    
+}
+
+@media (max-width: 768px) {
+    header{
+        flex-direction: column;
+    }
+    h1{
+        text-align: center;
+    }
+    nav{
+        flex-direction: column;
+    }
+
+    .buttons {
+        width: 30%; 
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    section{
+        text-align: center;
+    }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+    h1{
+        font-size: 2.3rem;
+    }
+    main{
+        flex-direction: row;
+    }
+    img {
+        max-width: 500px;
+        max-height: 500px;
+    }
+    section{
+        margin: 4%;
+    }
+}
+@media (min-width: 1200px) {
+    nav{
+        margin-right: 2%;
+        margin-top: 1%;
+    }
+    #headings{
+        font-size: 2rem;
+    }
+    #paragraph{
+        font-size: larger;
+    }
+    main {
+        flex-direction: row;
+    }
+
+    img {
+        max-width: 500px;
+    }
+    section{
+        margin: 4%;
+    }
 }
